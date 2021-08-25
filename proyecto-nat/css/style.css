@@ -1,0 +1,335 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	scroll-behavior: smooth;
+}
+
+/*
+p {
+	width: calc((100% - 52px) / 3);
+}
+
+*/
+
+.inner-container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.icon-here::before, .icon-check::before, .icon-telephone::before, .icon-check-star::before {
+	content: "";
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.icon-here::before {
+	background-image: url('../img/icon-here.png');
+	width: 18px;
+	height: 18px;
+}
+
+.icon-check::before {
+	background-image: url('../img/icon-check.png');
+	width: 18px;
+	height: 18px;
+	padding-right: 15px;
+}
+
+.icon-telephone::before {
+	background-image: url('../img/icon-telephone.png');
+	width: 15px;
+	height: 15px;
+}
+
+.icon-check-star::before {
+	background-image: url('../img/icon-check-star.png');
+	width: 15px;
+	height: 15px;
+}
+
+details summary img.icon-close {
+	display: none;
+}
+
+details[open] summary img.icon-close {
+	display: inline;
+}
+
+details[open] summary img.icon-open {
+	display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	appearance: textfield;
+}
+
+header .inner-container, 
+footer .inner-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header, 
+footer {
+	background-color: #121E47;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 16px;
+}
+
+header {
+	border-bottom: 3px solid #009FE3;
+	padding: 13px 120px;
+}
+
+section {
+	padding: 0 120px;
+}
+
+footer {
+	padding: 71px 120px 84px 120px;
+}
+
+a {
+	color: #ffffff;
+}
+
+.ul-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.ul-nav li {
+	margin-left: 50px;
+}
+
+.ul-nav li strong {
+	font-weight: 500;
+	margin-left: 7px;
+	color: #009FE3;
+}
+
+.main-nav .ul-nav .icon-telephone {
+	background: rgba(76, 200, 252, 0.3);
+	border-radius: 5px;
+	padding: 10px;
+}
+
+#first-section-home, #first-section-services {
+	background-repeat: no-repeat;
+	height: 487px;
+	background-size: cover;
+	background-position-y: 25%;
+}
+
+#first-section-home {
+	background-image: url('../img/picture-worker.png');
+	text-align: center;
+}
+
+/* por qué me queda diferente la imagen si tiene los mismos estilos que la de la home? */
+
+#first-section-services {
+	background-image: url('../img/picture-sink.png');
+}
+
+#first-section-contact {
+	background-color: #009FE3;
+}
+
+h1, h2, h3 {
+	font-family: 'IBM Plex Serif', serif;
+	font-size: 40px;
+}
+
+#h1-home {
+	padding: 151px 250px 21px;
+	color: #ffffff;
+}
+
+#h1-services {
+	padding: 121px 90px 300px 0;
+	color: #ffffff;
+}
+
+#h1-contact {
+	padding: 35px 108px 170px 10px;
+	white-space: nowrap;
+	color: #ffffff;
+}
+
+.h2-home, h3 {
+	color: #223A89;
+	padding: 0 0 10px;
+}
+
+#first-home-paragraph, 
+#snd-home-paragraph, 
+#trd-home-paragraph {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 20px;
+}
+
+#first-home-paragraph {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#snd-home-paragraph, #trd-home-paragraph {
+	color: #666666;
+}
+
+.frd-home-paragraph {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 18px;
+	color: #121E47;
+	padding: 10px 0;
+}
+
+#first-contact-paragraph, #first-services-paragraph {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 26px;
+	color: #ffffff;
+	text-align: left;
+}
+
+#first-services-paragraph {
+	padding: 136px 125px 140px 147px;
+}
+
+#first-contact-paragraph {
+	padding: 95px 120px 80px 80px;
+}
+
+#services-presentation, #contact-presentation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#snd-section-home {
+	background-color: #F5F5F5;
+}
+
+.article-home {
+	text-align: center;
+	padding: 84px 245px 53px;
+}
+
+#special-article-home {
+	padding: 84px 160px 53px;
+}
+
+#ul-home {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.icon-services {
+	padding: 85px 120px 50px;
+}
+
+figcaption {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 26px;
+	color: #223A89;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+figure {
+	background: #FFFFFF;
+	border: 1px solid #DEDEDE;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.13);
+	border-radius: 10px;
+	height: 370px;
+}
+
+.bttn-home {
+	display: flex;
+	justify-content: center;
+}
+
+a .button, 
+#bttn-contact {
+	background-color: #009FE3;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	font-weight: 700;
+	width: 220px;
+	border-radius: 5px;
+	padding: 16px 30px;
+}
+
+a .button {
+	margin: 40px;
+}
+
+#bttn-contact {
+	margin: 40px 0;
+}
+
+.icon-here {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+}
+
+#ul-zones {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 86px;
+}
+
+#section-about-us {
+	display: flex;
+	justify-content: left;
+	margin: 0;
+	padding: 0;
+
+}
+
+#article-about-us {
+	padding: 140px 167px 80px 65px;
+	background: #D7EEFD;
+	border-radius: 0 20px 20px 0;
+	
+}
+
+#strong-about-us {
+	padding-top: 10px;
+}
+
+#article-guarantee-home {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 110px 150px 90px;
+}
+
+.icon-check {
+	color: #121E47;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	padding: 10px;
+}
