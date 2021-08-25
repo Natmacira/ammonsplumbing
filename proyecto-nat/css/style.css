@@ -130,7 +130,8 @@ a {
 	padding: 10px;
 }
 
-#first-section-home, #first-section-services {
+#first-section-home, 
+#first-section-services {
 	background-repeat: no-repeat;
 	height: 487px;
 	background-size: cover;
@@ -332,4 +333,33 @@ a .button {
 	font-weight: 400;
 	font-size: 20px;
 	padding: 10px;
+}
+
+.ul-services {
+	padding-top: 100px;
+}
+
+.li-services {
+	display: flex;
+	justify-content: left;
+	color: #223A89;
+	font-size: 23px;
+	font-family: 'IBM Plex Serif', serif;
+	font-weight: 700;
+}
+
+details {
+	padding: 0 0 45px;
+	Width: 586px;
+}
+
+.text-services {
+	color: #666666;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: left;
+	Width: 586px;
+	Height: 86px;
+	padding-top: 15px;
 }
