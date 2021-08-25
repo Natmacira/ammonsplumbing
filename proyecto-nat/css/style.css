@@ -350,7 +350,7 @@ a .button {
 
 details {
 	padding: 0 0 45px;
-	Width: 586px;
+	Width: 50%;
 }
 
 .text-services {
@@ -359,7 +359,12 @@ details {
 	font-weight: 400;
 	font-size: 16px;
 	text-align: left;
-	Width: 586px;
+	Width: 80%;
 	Height: 86px;
 	padding-top: 15px;
+}
+
+#tools-services-img {
+	width: 100%;
+	border-radius: 10px;
 }
