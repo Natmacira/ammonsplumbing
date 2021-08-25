@@ -270,7 +270,8 @@ figure {
 }
 
 a .button, 
-#bttn-contact {
+#bttn-contact,
+#bttn-contact-us {
 	background-color: #009FE3;
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 17px;
@@ -285,7 +286,8 @@ a .button {
 	margin: 40px;
 }
 
-#bttn-contact {
+#bttn-contact,
+#bttn-contact-us {
 	margin: 40px 0;
 }
 
@@ -367,4 +369,32 @@ details {
 #tools-services-img {
 	width: 100%;
 	border-radius: 10px;
+}
+
+#call-us-div {
+	background-color: #D7EEFD;
+	font-family: 'IBM Plex Serif', serif;
+	display: flex;
+	color: #223A89;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#we-can-build-it {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact-info {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+#we-can-strong {
+	font-size: 30px;
+}
+
+#do-not-hesitate {
+	font-size: 25px;
 }
