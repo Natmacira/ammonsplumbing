@@ -49,8 +49,9 @@ p {
 
 .icon-check-star::before {
 	background-image: url('../img/icon-check-star.png');
-	width: 15px;
-	height: 15px;
+	width: 26px;
+	height: 26px;
+	padding-right: 35px;
 }
 
 details summary img.icon-close {
@@ -402,7 +403,7 @@ details {
 
 #contact-info .icon-telephone strong {
 	color: #009FE3;
-	font-family: IBM Plex Sans;
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 20px;
@@ -425,21 +426,40 @@ details {
 	flex-direction: column;
 	padding: 50px 0 60px 405px;
 	margin: 0;
-	width: 90%;
+	width: 93%;
 }
 
 #we-specialize-text {
 	color: #009FE3;
-	font-family: IBM Plex Sans;
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
 }
 
+/* no olvidar la alineación del remember tiene que quedar igual que el icono */
+
 #remember {
 	color: #333333;
-	font-family: IBM Plex Sans;
-	font-style: normal;
-	font-weight: normal;
+	font-family: 'IBM Plex Sans', sans-serif;	
 	font-size: 16px;
+	margin-top: 45px;
+    background: rgba(0, 159, 227, 0.1);
+	padding: 16px;
+	border-radius: 5px;
+}
+
+#contact-office-div {
+	display: flex;
+}
+
+div#contact-office-div ul li.icon-here,
+div#contact-office-div ul li.icon-telephone {
+	color: #666666;
+	font-family: 'IBM Plex Sans', sans-serif;	
+	font-size: 20px;
+}
+
+div#contact-office-div ul {
+	width: 13%;
 }
