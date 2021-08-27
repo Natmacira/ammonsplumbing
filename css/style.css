@@ -419,3 +419,27 @@ details {
 	flex-direction: column;
 	align-items: center;
 }
+
+#text-from-contact-div {
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0 60px 405px;
+	margin: 0;
+	width: 90%;
+}
+
+#we-specialize-text {
+	color: #009FE3;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+#remember {
+	color: #333333;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+}
