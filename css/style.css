@@ -286,8 +286,7 @@ a .button {
 	margin: 40px;
 }
 
-#bttn-contact,
-#bttn-contact-us {
+#bttn-contact {
 	margin: 40px 0;
 }
 
@@ -385,11 +384,6 @@ details {
 	flex-direction: column;
 }
 
-#contact-info {
-	display: flex;
-	flex-direction: column;
-	
-}
 
 #we-can-strong {
 	font-size: 30px;
@@ -397,4 +391,31 @@ details {
 
 #do-not-hesitate {
 	font-size: 25px;
+	
+}
+
+#call-us-div {
+	border-radius: 20px;
+    margin: 10px 0 118px;
+    padding: 43px 0;
+}
+
+#contact-info .icon-telephone strong {
+	color: #009FE3;
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+
+#bttn-contact-us {
+	margin: 13px;
+	width: 75%;
+}
+
+#contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
