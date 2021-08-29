@@ -511,3 +511,9 @@ textarea::placeholder {
 	font-size: 20px;
 	color: rgba(0, 0, 0, 0.5);
 }
+
+#captcha-article {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 70px;
+}
