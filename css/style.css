@@ -458,8 +458,44 @@ div#contact-office-div ul li.icon-telephone {
 	color: #666666;
 	font-family: 'IBM Plex Sans', sans-serif;	
 	font-size: 20px;
+	padding-bottom: 30px;
 }
 
 div#contact-office-div ul {
-	width: 13%;
+	width: 16%;
+}
+
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 0 240px;
+	font-family: 'IBM Plex Sans', sans-serif;	
+	font-size: 20px;
+	width: 100%;
+}
+
+.input-form,
+.message-form {
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	margin-bottom: 40px;
+}
+
+.input-form {
+	height: 40px;
+}
+
+.message-form {
+		height: 160px;
+}
+
+.capctcha-form {
+	padding-bottom: 10px;
+	height: 20px;
+}
+input::placeholder,
+textarea::placeholder {
+	font-family: 'IBM Plex Sans', sans-serif;	
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.5);
 }
