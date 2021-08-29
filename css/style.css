@@ -473,6 +473,10 @@ div#contact-office-div ul li.icon-telephone {
 	padding-bottom: 30px;
 }
 
+div#contact-office-div ul li.icon-here {
+	width: 135%;
+}
+
 div#contact-office-div ul {
 	width: 16%;
 }
