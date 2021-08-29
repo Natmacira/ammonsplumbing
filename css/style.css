@@ -272,23 +272,41 @@ figure {
 
 a .button, 
 #bttn-contact,
-#bttn-contact-us {
+#bttn-contact-us,
+.button-form {
 	background-color: #009FE3;
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 17px;
 	text-align: center;
 	font-weight: 700;
-	width: 220px;
 	border-radius: 5px;
-	padding: 16px 30px;
 }
 
 a .button {
 	margin: 40px;
+	width: 20%;
+    height: 55px;
+	padding: 16px 30px;
 }
 
 #bttn-contact {
-	margin: 40px 0;
+	width: 34%;
+    height: 55px;
+	padding: 16px 30px;
+	margin-top: 30px;
+}
+
+#bttn-contact-us {
+	margin: 13px;
+	width: 75%;
+	padding: 10px;
+	height: 45px;
+}
+
+.button-form {
+	width: 20%;
+	height: 45px;
+	color: #ffffff;
 }
 
 .icon-here {
@@ -407,12 +425,6 @@ details {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 20px;
-}
-
-
-#bttn-contact-us {
-	margin: 13px;
-	width: 75%;
 }
 
 #contact-info {
