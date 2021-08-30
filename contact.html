@@ -64,7 +64,7 @@
                     <li class="icon-here">7427 Matthews Mint Hill Rd.
                         Ste 105-PMB 363 Mint Hill, NC 28227</li>
                 </ul>
-                <form action="" id="contact-form">
+                <form action="" id="contact-form" method="POST">
                     <input type="text" placeholder="Your name*" name="name" class="input-form" required>
                     <input type="email" placeholder="E-mail*" name="mail" class="input-form" required>
                     <input type="text" placeholder="Phone number" name="phone-number" class="input-form">
@@ -72,12 +72,10 @@
                         required></textarea>
                     <article id="captcha-article">
                         <div id="text-for-captcha">
-                            <p id="captcha-first-number"></p>
-                            <p>+</p>
-                            <p id="captcha-second-number"></p>
-                            <p>=</p>
+                            <p id="captcha-random"></p>
                         </div>
-                        <input type="number" name="captcha"  class="captcha-form" id="result-value">
+                        <input type="number" name="captcha" class="captcha-form" id="result-value" required>
+                        <input type="hidden" id="secret-result" >
                         <button id="button" class="button-form">Send message</button>
                     </article>
                 </form>

@@ -1,34 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const firstNumber = document.getElementById('captcha-first-number');
+    const numbersForCaptcha = document.getElementById('captcha-random');
 
-    const secondNumber = document.getElementById('captcha-second-number');
+    const resultAddition = document.getElementById('result-value');
 
-    const resultAddition = document.getElementById('result-value').value;
+    const secretResult = document.getElementById('secret-result');
 
-  
-        function numberOne() {
-            let randomNumber = Math.floor(Math.random() * 10);
-            firstNumber.innerText = randomNumber;
-        };
-        numberOne();
-    
-    
-            function numberTwo() {
-            let randomNumberTwo = Math.floor(Math.random() * 10);
-            secondNumber.innerText = randomNumberTwo;
-        };
-        numberTwo();
-    
-        function addition() {
-    
-            if (( randomNumber + randomNumberTwo) === resultAddition ) 
-            alert ("todo bien");
-            else alert ("todo mal")
-    
-        };
-        addition();
-    
+    const contactForm = document.getElementById('contact-form');
+
+    function generateCaptcha() {
+        let randomNumber = Math.floor(Math.random() * 10);
+        let randomNumberTwo = Math.floor(Math.random() * 10);
+        numbersForCaptcha.innerText = randomNumber + ' + ' + randomNumberTwo + ' = ';
+
+        secretResult.value = randomNumber + randomNumberTwo; 
+    }
+    generateCaptcha();
+
+    contactForm.addEventListener('submit', function (e){
+        e.preventDefault();
+        
+        if ( secretResult.value === resultAddition.value ) {
+            this.submit();   
+        } else {
+            alert ('sumaste mal');
+        }
+
+    });
+
 
 
 
