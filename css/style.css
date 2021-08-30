@@ -496,10 +496,14 @@ div#contact-office-div ul {
 	padding-bottom: 10px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	margin-bottom: 40px;
+	font-family: 'IBM Plex Sans', sans-serif;	
+	font-size: 20px;
+	
 }
 
 .input-form {
 	height: 40px;
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .message-form {
@@ -511,6 +515,8 @@ div#contact-office-div ul {
 	height: 45px;
 	width: 7%;
 	margin: 0 40px 0 12px;
+	
+	
 }
 input::placeholder,
 textarea::placeholder {
