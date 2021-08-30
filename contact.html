@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@700&display=swap"
         rel="stylesheet">
+    <script src="js/contact.js"></script>
 </head>
 
 <body>
@@ -70,8 +71,13 @@
                     <textarea type="text" placeholder="Message" name="message" id="message-form" class="message-form"
                         required></textarea>
                     <article id="captcha-article">
-                        <label for="captcha" id="label-captcha" class="captcha-form">5 + 14 =</label><input
-                            type="number" name="captcha" id="input-captcha" class="captcha-form">
+                        <div id="text-for-captcha">
+                            <p id="captcha-first-number"></p>
+                            <p>+</p>
+                            <p id="captcha-second-number"></p>
+                            <p>=</p>
+                        </div>
+                        <input type="number" name="captcha" id="input-captcha" class="captcha-form">
                         <button id="button" class="button-form">Send message</button>
                     </article>
                 </form>

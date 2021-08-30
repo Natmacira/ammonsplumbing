@@ -491,7 +491,8 @@ div#contact-office-div ul {
 }
 
 .input-form,
-.message-form {
+.message-form,
+.captcha-form {
 	padding-bottom: 10px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	margin-bottom: 40px;
@@ -505,9 +506,11 @@ div#contact-office-div ul {
 		height: 160px;
 }
 
-.capctcha-form {
+.captcha-form {
 	padding-bottom: 10px;
-	height: 20px;
+	height: 45px;
+	width: 7%;
+	margin: 0 40px 0 12px;
 }
 input::placeholder,
 textarea::placeholder {
@@ -520,4 +523,14 @@ textarea::placeholder {
 	display: flex;
 	justify-content: flex-end;
 	margin-bottom: 70px;
+}
+
+#text-for-captcha {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+    width: 8%;
+	font-family: 'IBM Plex Sans', sans-serif;	
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.5);
 }
