@@ -545,7 +545,20 @@ textarea::placeholder {
 	display: none;
 }
 
+.paragraph-good-number{
+	display: none;
+}
+
 .wrong-number-in-captcha {
+	font-size: 18px;
+	font-family: 'IBM Plex Sans', sans-serif;	
+	color:  #009FE3;
+	text-align: center;
+	padding: 8px 10px;
+	display: block;
+}
+
+.good-number-in-captcha {
 	font-size: 18px;
 	font-family: 'IBM Plex Sans', sans-serif;	
 	color:  #009FE3;
