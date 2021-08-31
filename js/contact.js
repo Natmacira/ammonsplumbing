@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const contactForm       = document.getElementById('contact-form');
 
-    const wrongNumber       = document.getElementById('paragraph-wrong-number');
+    const wrongNumber       = document.querySelector('.paragraph-wrong-number');
 
     function generateCaptcha() {
         let randomNumber = Math.floor(Math.random() * 10);
@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if ( secretResult.value === resultAddition.value ) {
             this.submit();   
         } else { 
+        
             wrongNumber.classList.add('wrong-number-in-captcha');
+
         }
 
     });
