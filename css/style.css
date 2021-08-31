@@ -52,6 +52,7 @@ p {
 	width: 26px;
 	height: 26px;
 	padding-right: 35px;
+	vertical-align: middle;
 }
 
 details summary img.icon-close {
@@ -498,7 +499,6 @@ div#contact-office-div ul {
 	margin-bottom: 40px;
 	font-family: 'IBM Plex Sans', sans-serif;	
 	font-size: 20px;
-	
 }
 
 .input-form {
@@ -515,9 +515,9 @@ div#contact-office-div ul {
 	height: 45px;
 	width: 7%;
 	margin: 0 40px 0 12px;
-	
-	
+	text-align: center;
 }
+
 input::placeholder,
 textarea::placeholder {
 	font-family: 'IBM Plex Sans', sans-serif;	
