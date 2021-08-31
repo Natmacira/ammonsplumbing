@@ -540,3 +540,16 @@ textarea::placeholder {
 	font-size: 20px;
 	color: rgba(0, 0, 0, 0.5);
 }
+
+.paragraph-wrong-number{
+	display: none;
+}
+
+.wrong-number-in-captcha {
+	font-size: 18px;
+	font-family: 'IBM Plex Sans', sans-serif;	
+	color:  #009FE3;
+	text-align: center;
+	padding: 8px 10px;
+	display: block;
+}

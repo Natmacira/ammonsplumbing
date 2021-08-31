@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const numbersForCaptcha = document.getElementById('captcha-random');
 
-    const resultAddition = document.getElementById('result-value');
+    const resultAddition    = document.getElementById('result-value');
 
-    const secretResult = document.getElementById('secret-result');
+    const secretResult      = document.getElementById('secret-result');
 
-    const contactForm = document.getElementById('contact-form');
+    const contactForm       = document.getElementById('contact-form');
+
+    const wrongNumber       = document.getElementById('paragraph-wrong-number');
 
     function generateCaptcha() {
         let randomNumber = Math.floor(Math.random() * 10);
@@ -22,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
         
         if ( secretResult.value === resultAddition.value ) {
             this.submit();   
-        } else {
-            alert ('sumaste mal');
+        } else { 
+            wrongNumber.classList.add('wrong-number-in-captcha');
         }
 
     });
