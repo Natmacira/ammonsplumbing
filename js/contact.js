@@ -2,16 +2,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const numbersForCaptcha = document.getElementById('captcha-random');
 
-    const resultAddition = document.getElementById('result-value');
+    const resultAddition    = document.getElementById('result-value');
 
-    const secretResult = document.getElementById('secret-result');
+    const secretResult      = document.getElementById('secret-result');
 
-    const contactForm = document.getElementById('contact-form');
+    const contactForm       = document.getElementById('contact-form');
 
-    const wrongNumber = document.querySelector('.paragraph-wrong-number');
+    const wrongNumber       = document.querySelector('.paragraph-wrong-number');
 
-    const goodNumber = document.querySelector('.paragraph-good-number')
+    const goodNumber        = document.querySelector('.paragraph-good-number')
 
+    
     function generateCaptcha() {
         let randomNumber = Math.floor(Math.random() * 10);
         let randomNumberTwo = Math.floor(Math.random() * 10);
@@ -19,50 +20,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
         secretResult.value = randomNumber + randomNumberTwo;
     }
+    
+    if(numbersForCaptcha) { 
     generateCaptcha();
+    }
 
-    contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        if (secretResult.value === resultAddition.value) {
-
-            goodNumber.classList.add('good-number-in-captcha');
-            wrongNumber.classList.remove('wrong-number-in-captcha');
-
-        } else {
-
-            wrongNumber.classList.add('wrong-number-in-captcha');
-            goodNumber.classList.remove('good-number-in-captcha');
-
-        }
-
-    });
+    if(contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+    
+            if (secretResult.value === resultAddition.value) {
+    
+                goodNumber.classList.add('good-number-in-captcha');
+                wrongNumber.classList.remove('wrong-number-in-captcha');
+    
+            } else {
+    
+                wrongNumber.classList.add('wrong-number-in-captcha');
+                goodNumber.classList.remove('good-number-in-captcha');
+    
+            }
+    
+        });
+    }
 
     const burgerMenuBtn = document.querySelector("#burger-menu-toggler")
 
-    const menuItems = document.querySelectorAll(".menu-item")
-
-    function navResponsive() {
-
         burgerMenuBtn.addEventListener('click', function () {
-            document.body.classList.toggle('mobile-menu-active');
+            document.body.classList.toggle('hamburger-active');
         });
-
-        menuItems.forEach(function (menuItem) {
-            menuItem.addEventListener('click', function () {
-                document.body.classList.remove('mobile-menu-active');
-
-                let currentItem = document.querySelector('.active');
-                currentItem.classList.remove('active');
-                this.classList.add('active');
-
-            })
-        })
-
-    }
-
-    navResponsive();
-
-
 
 });

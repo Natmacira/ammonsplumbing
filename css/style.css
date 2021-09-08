@@ -679,12 +679,21 @@ input::placeholder, textarea::placeholder {
 	display: block;
 }
 
-.fa, .fab, .fad, .fal, .far, .fas {
+ #burger-menu-toggler {
 	color: #121E47;
-	background-color: #121E47;
+	display: none;
 }
 
 @media (max-width:768px) {
+
+	#burger-menu-toggler {
+		display: block;
+	}
+
+	#close-mobile-menu {
+		display: none;
+	}
+
 	header {
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -697,19 +706,35 @@ input::placeholder, textarea::placeholder {
 		color: white;
 		position: absolute;
 	}
+
+	body.hamburger-active header {
+		height: 100%;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left:0 ;
+		background-color: #121E47;
+	}
+
+	body.hamburger-active li.menu-item {
+		padding: 80px 0;
+		font-size: 48px;
+	}
+	
+	body.hamburger-active header div nav ul.ul-nav {
+		display: flex; 
+	}
+
+	body.hamburger-active #close-mobile-menu {
+		display: block;
+	}
+
+	body.hamburger-active #open-mobile-menu {
+		display: none;
+	}
 }
 
-/*
-body.hamburger-active header {
-    height: 100%;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
 
-body.hamburger-active li.menu-item {
-    padding: 80px 0;
-    font-size: 48px;
-}
-*/
+
+
+
