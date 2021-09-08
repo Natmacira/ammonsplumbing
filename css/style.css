@@ -724,6 +724,10 @@ input::placeholder, textarea::placeholder {
 	}
 	body.hamburger-active #close-mobile-menu {
 		display: block;
+		color: white;
+		background-color: #121E47;
+		position: absolute;
+		top: 45px;
 	}
 	body.hamburger-active #open-mobile-menu {
 		display: none;
