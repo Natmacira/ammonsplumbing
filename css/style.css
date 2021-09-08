@@ -705,6 +705,7 @@ input::placeholder, textarea::placeholder {
 		display: block;
 		color: white;
 		position: absolute;
+		top: 40px;
 	}
 
 	body.hamburger-active header {
