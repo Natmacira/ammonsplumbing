@@ -196,6 +196,12 @@ h1, h2, h3 {
 	color: #ffffff;
 }
 
+@media (max-width:768px) {
+	#h1-services {
+		padding: 30px 340px 0 0;
+	}
+}
+
 #h1-contact {
 	padding: 35px 108px 170px 10px;
 	white-space: nowrap;
@@ -257,12 +263,36 @@ h1, h2, h3 {
 	padding: 95px 120px 80px 80px;
 }
 
-#services-presentation, #contact-presentation {
+#services-presentation, 
+#contact-presentation {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
+
+@media (max-width:768px) {
+	#services-presentation, 
+	#contact-presentation {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#first-services-paragraph {
+		padding: 35px 24px 10px 0;
+		text-align: left;
+		font-size: 27px;
+	}
+	
+	#first-contact-paragraph {
+		padding: 10px;
+		text-align: center;
+		font-size: 29px;
+	}
+}
+
 
 #snd-section-home {
 	background-color: #F5F5F5;
@@ -489,6 +519,12 @@ ul.ul-guarantee {
 	font-weight: 700;
 }
 
+@media (max-width:768px) {
+	.li-services {
+		flex-direction: column;
+	}
+}
+
 details {
 	padding: 0 0 45px;
 	Width: 50%;
@@ -508,6 +544,12 @@ details {
 #tools-services-img {
 	width: 100%;
 	border-radius: 10px;
+}
+
+@media (max-width:768px) {
+	#tools-services-img {
+		display: none;
+	}
 }
 
 #call-us-div {
