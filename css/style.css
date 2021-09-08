@@ -263,8 +263,7 @@ h1, h2, h3 {
 	padding: 95px 120px 80px 80px;
 }
 
-#services-presentation, 
-#contact-presentation {
+#services-presentation, #contact-presentation {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -272,27 +271,23 @@ h1, h2, h3 {
 }
 
 @media (max-width:768px) {
-	#services-presentation, 
-	#contact-presentation {
+	#services-presentation, #contact-presentation {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
-
 	#first-services-paragraph {
 		padding: 35px 24px 10px 0;
 		text-align: left;
 		font-size: 27px;
 	}
-	
 	#first-contact-paragraph {
 		padding: 10px;
 		text-align: center;
 		font-size: 29px;
 	}
 }
-
 
 #snd-section-home {
 	background-color: #F5F5F5;
@@ -519,15 +514,34 @@ ul.ul-guarantee {
 	font-weight: 700;
 }
 
-@media (max-width:768px) {
-	.li-services {
-		flex-direction: column;
-	}
+.li-services:hover {
+	cursor: pointer;
 }
 
 details {
 	padding: 0 0 45px;
 	Width: 50%;
+}
+
+@media (max-width:768px) {
+	.li-services {
+		flex-direction: column;
+		font-size: 29px;
+	}
+	.icon-open {
+		padding-left: 10px;
+		height: 18px;
+	}
+	.icon-close {
+		padding-left: 10px;
+		height: 18px;
+	}
+	details {
+		width: 100%;
+	}
+	#ul-services-snd {
+		padding: 0;
+	}
 }
 
 .text-services {
@@ -549,6 +563,11 @@ details {
 @media (max-width:768px) {
 	#tools-services-img {
 		display: none;
+	}
+
+	.text-services {
+		font-size: 24px;
+		Height: 100%;
 	}
 }
 
@@ -729,7 +748,6 @@ input::placeholder, textarea::placeholder {
 @media (max-width:768px) {
 	#burger-menu-toggler {
 		display: block;
-		
 	}
 	#close-mobile-menu {
 		display: none;
