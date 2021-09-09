@@ -196,16 +196,20 @@ h1, h2, h3 {
 	color: #ffffff;
 }
 
-@media (max-width:768px) {
-	#h1-services {
-		padding: 30px 340px 0 0;
-	}
-}
-
 #h1-contact {
 	padding: 35px 108px 170px 10px;
 	white-space: nowrap;
 	color: #ffffff;
+}
+
+@media (max-width:768px) {
+	#h1-services {
+		padding: 30px 340px 0 0;
+	}
+	#h1-contact {
+		padding: 30px 340px 0 0;
+		white-space: none;
+	}
 }
 
 .h2-home, h3 {
@@ -283,9 +287,9 @@ h1, h2, h3 {
 		font-size: 27px;
 	}
 	#first-contact-paragraph {
-		padding: 10px;
-		text-align: center;
-		font-size: 29px;
+		padding: 35px 24px 45px 0;
+		text-align: left;
+		font-size: 27px;
 	}
 }
 
@@ -416,6 +420,14 @@ a .button {
 	color: #ffffff;
 }
 
+@media (max-width:768px) {
+.button-form {
+    width: 35%;
+    height: 55px;
+	font-size: 20px;
+}
+
+}
 .icon-here {
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 400;
@@ -627,11 +639,9 @@ details {
 		flex-direction: column;
 		align-items: flex-start;
 	}
-
 	#we-can-strong {
 		font-size: 36px;
 	}
-
 	#do-not-hesitate {
 		font-size: 30px;
 	}
@@ -671,12 +681,25 @@ details {
 	width: 93%;
 }
 
+@media (max-width:768px) {
+	#text-from-contact-div {
+		padding: 0;
+	}
+}
+
 #we-specialize-text {
 	color: #009FE3;
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
+}
+
+@media (max-width:768px) {
+	#we-specialize-text {
+		font-size: 28px;
+		padding: 40px 0;
+	}
 }
 
 #remember {
@@ -689,8 +712,25 @@ details {
 	border-radius: 5px;
 }
 
+@media (max-width:768px) {
+	#remember {
+		font-size: 27px;
+		padding: 25px;
+		border-radius: 20px;
+		text-align: -webkit-match-parent;
+	}
+}
+
 #contact-office-div {
 	display: flex;
+}
+
+@media (max-width:768px) {
+	#contact-office-div {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
 }
 
 div#contact-office-div ul li.icon-here, div#contact-office-div ul li.icon-telephone {
@@ -698,6 +738,12 @@ div#contact-office-div ul li.icon-here, div#contact-office-div ul li.icon-teleph
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 20px;
 	padding-bottom: 30px;
+}
+
+@media (max-width:768px) {
+	div#contact-office-div ul li.icon-here, div#contact-office-div ul li.icon-telephone {
+		font-size: 30px;
+	}
 }
 
 div#contact-office-div ul li.icon-here {
@@ -708,6 +754,13 @@ div#contact-office-div ul {
 	width: 16%;
 }
 
+@media (max-width:768px) {
+	div#contact-office-div ul {
+		width: 80%;
+		padding: 45px 45px 10px 0;
+	}
+}
+
 #contact-form {
 	display: flex;
 	flex-direction: column;
@@ -715,6 +768,12 @@ div#contact-office-div ul {
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 20px;
 	width: 100%;
+}
+
+@media (max-width:768px) {
+	#contact-form {
+		padding: 0;
+	}
 }
 
 .input-form, .message-form, .captcha-form {
@@ -734,12 +793,30 @@ div#contact-office-div ul {
 	height: 160px;
 }
 
+@media (max-width:768px) {
+	.input-form {
+		height: 55px;
+	}
+	.input-form::placeholder {
+		font-size: 26px;
+	}
+	.message-form::placeholder {
+		font-size: 26px;
+	}
+}
+
 .captcha-form {
 	padding-bottom: 10px;
 	height: 45px;
 	width: 7%;
 	margin: 0 40px 0 12px;
 	text-align: center;
+}
+
+@media (max-width:768px) {
+	.captcha-form {
+		width: 15%;
+	}
 }
 
 input::placeholder, textarea::placeholder {
@@ -762,6 +839,13 @@ input::placeholder, textarea::placeholder {
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 20px;
 	color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width:768px) {
+	#text-for-captcha {
+		width: 20%;
+		font-size: 26px;
+	}
 }
 
 .paragraph-wrong-number {
