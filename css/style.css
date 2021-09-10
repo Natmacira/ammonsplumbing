@@ -83,6 +83,12 @@ header .inner-container, footer .inner-container {
 	align-items: center;
 }
 
+@media (max-width:415px) {
+	header .inner-container {
+		justify-content: space-evenly;
+	}
+} 
+
 @media (max-width:768px) {
 	footer .inner-container {
 		flex-direction: column;
@@ -104,8 +110,28 @@ header {
 	padding: 13px 120px;
 }
 
+@media (max-width:768px) {
+	header {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-width:415px) {
+	header {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
 section {
 	padding: 0 120px;
+}
+
+@media (max-width:415px) {
+	section {
+		padding: 0;
+	}
 }
 
 footer {
@@ -191,6 +217,13 @@ h1, h2, h3 {
 	}
 }
 
+@media (max-width: 415px) {
+	#h1-home {
+		padding: 100px 12px 21px;
+		font-size: 32px;
+	}
+}
+
 #h1-services {
 	padding: 121px 90px 300px 0;
 	color: #ffffff;
@@ -222,12 +255,20 @@ h1, h2, h3 {
 	font-size: 20px;
 }
 
+
 @media (max-width:768px) {
 	#trd-home-paragraph, #snd-home-paragraph {
 		font-size: 28px;
 	}
 	#first-home-paragraph {
 		font-size: 24px;
+	}
+}
+
+@media (max-width: 415px) {
+	#first-home-paragraph {
+		padding: 0 49px;
+		font-size: 18px;
 	}
 }
 
@@ -424,7 +465,6 @@ a .button {
 	}
 }
 
-
 @media (max-width:1204px) {
 	#bttn-contact {
 		width: 80%;
@@ -482,13 +522,13 @@ a .button {
 }
 
 @media (max-width:768px) {
-.button-form {
-    width: 35%;
-    height: 55px;
-	font-size: 20px;
+	.button-form {
+		width: 35%;
+		height: 55px;
+		font-size: 20px;
+	}
 }
 
-}
 .icon-here {
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 400;
@@ -946,10 +986,6 @@ input::placeholder, textarea::placeholder {
 	}
 	#close-mobile-menu {
 		display: none;
-	}
-	header {
-		padding-top: 30px;
-		padding-bottom: 30px;
 	}
 	header div nav ul.ul-nav {
 		display: none;
