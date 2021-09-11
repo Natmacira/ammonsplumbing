@@ -418,6 +418,10 @@ figure {
 	height: 370px;
 }
 
+.figure-home {
+	margin: 0 50px 0 0;
+}
+
 @media (max-width:768px) {
 	figure {
 		margin-bottom: 20px;
