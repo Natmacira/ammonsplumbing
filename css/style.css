@@ -119,8 +119,8 @@ header {
 
 @media (max-width:415px) {
 	header {
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
@@ -136,6 +136,12 @@ section {
 
 footer {
 	padding: 71px 120px 84px 120px;
+}
+
+@media (max-width:415px) {
+	footer {
+		padding: 70px 60px;
+	}
 }
 
 a {
@@ -164,6 +170,12 @@ a {
 	.facebook {
 		padding-top: 30px;
 		height: 80px;
+	}
+}
+
+@media (max-width:415px) {
+	.ul-nav li {
+		font-size: 20px;
 	}
 }
 
@@ -272,7 +284,7 @@ h1, h2, h3 {
 }
 
 @media (max-width: 415px) {
-	#snd-home-paragraph {
+	#snd-home-paragraph, #trd-home-paragraph {
 		font-size: 18px;
 	}
 }
@@ -295,6 +307,12 @@ h1, h2, h3 {
 @media (max-width:768px) {
 	.frd-home-paragraph {
 		font-size: 22px;
+	}
+}
+
+@media (max-width:415px) {
+	.frd-home-paragraph {
+		font-size: 16px;
 	}
 }
 
@@ -554,6 +572,12 @@ a .button {
 	}
 }
 
+@media (max-width:415px) {
+	.icon-here {
+		font-size: 22px;
+	}
+}
+
 #ul-zones {
 	display: flex;
 	justify-content: space-between;
@@ -570,6 +594,13 @@ a .button {
 	}
 }
 
+@media (max-width:415px) {
+	#ul-zones {
+		padding-bottom: 40px;
+		padding-right: 35px;
+	}
+}
+
 #section-about-us {
 	display: flex;
 	justify-content: left;
@@ -580,6 +611,12 @@ a .button {
 @media (max-width:768px) {
 	#section-about-us {
 		flex-direction: column;
+	}
+}
+
+@media (max-width:415px) {
+	#section-about-us {
+		padding: 0 40px;
 	}
 }
 
@@ -596,6 +633,12 @@ a .button {
 	}
 	#img-city {
 		border-radius: 20px 20px 0 0
+	}
+}
+
+@media (max-width:415px) {
+	#article-about-us {
+		padding: 22px;
 	}
 }
 
@@ -629,6 +672,13 @@ ul.ul-guarantee {
 	#img-guarantee {
 		padding: 30px 0 50px 150px;
 		width: 75%;
+	}
+}
+
+@media (max-width: 415px) {
+	ul.ul-guarantee li.icon-check {
+		font-size: 18px;
+		padding-left: 40px;
 	}
 }
 
@@ -1007,6 +1057,15 @@ input::placeholder, textarea::placeholder {
 		position: absolute;
 		top: 40px;
 	}
+}
+
+@media (max-width:415px) {
+	#open-mobile-menu {
+		right: 80px;
+	}
+}
+
+@media (max-width:768px) {
 	body.hamburger-active header {
 		height: 100%;
 		position: fixed;
@@ -1039,5 +1098,24 @@ input::placeholder, textarea::placeholder {
 		position: absolute;
 		right: 323px;
 		bottom: 153px;
+	}
+}
+
+@media (max-width:768px) {
+	body.hamburger-active li.menu-item {
+		font-size: 20px;
+		padding: 50px 0;
+	}
+	body.hamburger-active header div a.home-link {
+		right: 142px;
+		bottom: 74px;
+	}
+	body.hamburger-active #close-mobile-menu {
+		right: 40px;
+	}
+	body.hamburger-active header div nav ul.ul-nav {
+		position: absolute;
+		right: 113px;
+		top: 130px;
 	}
 }
