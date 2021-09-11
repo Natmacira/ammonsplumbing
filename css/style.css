@@ -443,6 +443,7 @@ a .button {
 	width: 20%;
 	height: 55px;
 	padding: 16px 30px;
+	min-width: 250px;
 }
 
 @media (max-width:768px) {
