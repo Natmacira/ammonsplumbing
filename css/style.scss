@@ -2,6 +2,7 @@
 
 $breakpoint-tablet: 768px;
 $theme-color-blue: #121e47;
+$theme-color-light-blue: #009fe3;
 
 * {
 	margin: 0;
@@ -122,7 +123,7 @@ footer {
 }
 
 header {
-	border-bottom: 3px solid #009fe3;
+	border-bottom: 3px solid $theme-color-light-blue;
 	padding: 13px 120px;
 
 	@media (max-width: $breakpoint-tablet) {
@@ -156,7 +157,6 @@ a {
 	color: #ffffff;
 }
 
-
 .ul-nav {
 	display: flex;
 	flex-direction: row;
@@ -181,19 +181,19 @@ a {
 			font-size: 24px;
 		}
 
-		@media (max-width:415px) {
+		@media (max-width: 415px) {
 			font-size: 20px;
 		}
 
 		strong {
 			font-weight: 500;
 			margin-left: 7px;
-			color: #009FE3;
+			color: $theme-color-light-blue;
 		}
 	}
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 	.facebook {
 		padding-top: 30px;
 		height: 80px;
@@ -211,10 +211,8 @@ a {
 #first-section-home {
 	background-image: url("../img/picture-worker.png");
 	text-align: center;
-}
 
-@media (max-width: 600px) {
-	#first-section-home {
+	@media (max-width: 600px) {
 		padding: 0 50px;
 	}
 }
@@ -224,7 +222,7 @@ a {
 }
 
 #first-section-contact {
-	background-color: #009fe3;
+	background-color: $theme-color-light-blue;
 }
 
 h1,
@@ -237,34 +235,19 @@ h3 {
 #h1-home {
 	padding: 151px 250px 21px;
 	color: #ffffff;
-}
-
-@media (max-width: 1200px) {
-	#h1-home {
+	@media (max-width: 1200px) {
 		padding: 151px 0 21px;
 	}
-}
-
-@media (max-width: $breakpoint-tablet) {
-	#h1-home {
+	@media (max-width: $breakpoint-tablet) {
 		padding: 100px 33px 21px;
 	}
-}
-
-@media (max-width: 625px) {
-	#h1-home {
+	@media (max-width: 625px) {
 		padding: 100px 0 21px;
 	}
-}
-
-@media (max-width: 560px) {
-	#h1-home {
+	@media (max-width: 560px) {
 		font-size: 38px;
 	}
-}
-
-@media (max-width: 545px) {
-	#h1-home {
+	@media (max-width: 545px) {
 		font-size: 32px;
 		padding: 100px 12px 21px;
 	}
@@ -538,7 +521,7 @@ a .button,
 #bttn-contact,
 #bttn-contact-us,
 .button-form {
-	background-color: #009fe3;
+	background-color: $theme-color-light-blue;
 	font-family: "IBM Plex Sans", sans-serif;
 	font-size: 17px;
 	text-align: center;
@@ -919,7 +902,7 @@ details {
 }
 
 #contact-info .icon-telephone strong {
-	color: #009fe3;
+	color: $theme-color-light-blue;
 	font-family: "IBM Plex Sans", sans-serif;
 	font-style: normal;
 	font-weight: 500;
@@ -959,7 +942,7 @@ details {
 }
 
 #we-specialize-text {
-	color: #009fe3;
+	color: $theme-color-light-blue;
 	font-family: "IBM Plex Sans", sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -1135,7 +1118,7 @@ textarea::placeholder {
 .wrong-number-in-captcha {
 	font-size: 18px;
 	font-family: "IBM Plex Sans", sans-serif;
-	color: #009fe3;
+	color: $theme-color-light-blue;
 	text-align: center;
 	padding: 8px 10px;
 	display: block;
@@ -1144,7 +1127,7 @@ textarea::placeholder {
 .good-number-in-captcha {
 	font-size: 18px;
 	font-family: "IBM Plex Sans", sans-serif;
-	color: #009fe3;
+	color: $theme-color-light-blue;
 	text-align: center;
 	padding: 8px 10px;
 	display: block;
