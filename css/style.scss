@@ -853,13 +853,12 @@ details {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	padding: 0 0 0 340px;
+	width: 68%;
 }
 
 @media (max-width: $breakpoint-tablet) {
 	#we-specialize-text {
 		font-size: 28px;
-		padding: 40px 0;
 	}
 }
 
@@ -871,16 +870,15 @@ details {
 	background: rgba(0, 159, 227, 0.1);
 	padding: 16px;
 	border-radius: 5px;
-}
+	width: 68%;
 
-@media (max-width: $breakpoint-tablet) {
-	#remember {
-		font-size: 27px;
-		padding: 25px;
-		border-radius: 20px;
-		text-align: -webkit-match-parent;
+	@media (max-width: $breakpoint-tablet) {
+			font-size: 27px;
+			border-radius: 20px;
+			text-align: -webkit-match-parent;
 	}
 }
+
 
 #contact-office-div {
 	display: flex;
