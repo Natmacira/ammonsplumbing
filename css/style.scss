@@ -837,17 +837,15 @@ details {
 
 #text-from-contact-div {
 	display: flex;
-	flex-direction: column;
-	padding: 50px 0 60px 405px;
-	margin: 0;
-	width: 93%;
+    flex-direction: column;
+    padding: 50px 0 60px 0;
+    align-items: flex-end;
+	
+	@media (max-width: $breakpoint-tablet) {
+			padding: 0;
+		}
 }
 
-@media (max-width: $breakpoint-tablet) {
-	#text-from-contact-div {
-		padding: 0;
-	}
-}
 
 #we-specialize-text {
 	color: $theme-color-light-blue;
@@ -855,6 +853,7 @@ details {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
+	padding: 0 0 0 340px;
 }
 
 @media (max-width: $breakpoint-tablet) {
