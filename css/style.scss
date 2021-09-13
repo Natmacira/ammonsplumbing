@@ -1,6 +1,7 @@
 // sass style.scss style.min.css --style=compressed
 
 $breakpoint-tablet: 768px;
+$breakpoint-iphone678plus: 415px;
 $theme-color-blue: #121e47;
 $theme-color-light-blue: #009fe3;
 
@@ -98,7 +99,7 @@ footer .inner-container {
 	align-items: center;
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	header .inner-container {
 		justify-content: space-evenly;
 	}
@@ -131,7 +132,7 @@ header {
 		padding-bottom: 30px;
 	}
 
-	@media (max-width: 415px) {
+	@media (max-width: $breakpoint-iphone678plus) {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -140,7 +141,7 @@ header {
 section {
 	padding: 0 120px;
 
-	@media (max-width: 415px) {
+	@media (max-width: $breakpoint-iphone678plus) {
 		padding: 0;
 	}
 }
@@ -148,7 +149,7 @@ section {
 footer {
 	padding: 71px 120px 84px 120px;
 
-	@media (max-width: 415px) {
+	@media (max-width: $breakpoint-iphone678plus) {
 		padding: 70px 60px;
 	}
 }
@@ -181,7 +182,7 @@ a {
 			font-size: 24px;
 		}
 
-		@media (max-width: 415px) {
+		@media (max-width: $breakpoint-iphone678plus) {
 			font-size: 20px;
 		}
 
@@ -265,7 +266,7 @@ h3 {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	#h1-home {
 		padding: 100px 12px 21px;
 		font-size: 32px;
@@ -336,7 +337,7 @@ h3 {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	#first-home-paragraph {
 		padding: 0 49px;
 		font-size: 18px;
@@ -350,7 +351,7 @@ h3 {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	#snd-home-paragraph,
 	#trd-home-paragraph {
 		font-size: 18px;
@@ -379,7 +380,7 @@ h3 {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	.frd-home-paragraph {
 		font-size: 16px;
 	}
@@ -543,7 +544,7 @@ a .button {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	a .button {
 		width: 55%;
 	}
@@ -556,73 +557,7 @@ a .button {
 	margin-top: 30px;
 	min-width: 150px;
 }
-/*
-@media (max-width: 1423px) {
-	#bttn-contact {
-		width: 40%;
-	}
-}
 
-@media (max-width: 1359px) {
-	#bttn-contact {
-		width: 50%;
-	}
-}
-
-@media (max-width: 1286px) {
-	#bttn-contact {
-		width: 55%;
-	}
-}
-
-@media (max-width: 1261px) {
-	#bttn-contact {
-		width: 60%;
-	}
-}
-
-@media (max-width: 1238px) {
-	#bttn-contact {
-		width: 70%;
-	}
-}
-
-@media (max-width: 1204px) {
-	#bttn-contact {
-		width: 80%;
-	}
-}
-
-@media (max-width: 1178px) {
-	#bttn-contact {
-		width: 90%;
-	}
-}
-
-@media (max-width: 1158px) {
-	#bttn-contact {
-		width: 100%;
-	}
-}
-
-@media (max-width: 1142px) {
-	#bttn-contact {
-		width: 110%;
-	}
-}
-
-@media (max-width: 1129px) {
-	#bttn-contact {
-		width: 120%;
-	}
-}
-
-@media (max-width: $breakpoint-tablet) {
-	#bttn-contact {
-		width: 50%;
-	}
-}
-*/
 #bttn-contact-us {
 	margin: 13px;
 	width: 75%;
@@ -665,7 +600,7 @@ a .button {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	.icon-here {
 		font-size: 22px;
 	}
@@ -687,7 +622,7 @@ a .button {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	#ul-zones {
 		padding-bottom: 40px;
 		padding-right: 35px;
@@ -707,7 +642,7 @@ a .button {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	#section-about-us {
 		padding: 0 40px;
 	}
@@ -729,7 +664,7 @@ a .button {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	#article-about-us {
 		padding: 22px;
 	}
@@ -768,7 +703,7 @@ ul.ul-guarantee {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	ul.ul-guarantee li.icon-check {
 		font-size: 18px;
 		padding-left: 40px;
@@ -1157,7 +1092,7 @@ textarea::placeholder {
 	}
 }
 
-@media (max-width: 415px) {
+@media (max-width: $breakpoint-iphone678plus) {
 	#open-mobile-menu {
 		right: 80px;
 	}
