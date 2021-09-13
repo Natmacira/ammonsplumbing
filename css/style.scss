@@ -19,6 +19,13 @@ $theme-color-light-blue: #009fe3;
 .inner-container {
 	max-width: 1440px;
 	margin: 0 auto;
+
+	&#text-home {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .icon-here::before,
@@ -212,6 +219,7 @@ a {
 #first-section-home {
 	background-image: url("../img/picture-worker.png");
 	text-align: center;
+	display: flex;
 
 	@media (max-width: 600px) {
 		padding: 0 50px;
@@ -234,50 +242,10 @@ h3 {
 }
 
 #h1-home {
-	padding: 151px 250px 21px;
 	color: #ffffff;
-	@media (max-width: 1200px) {
-		padding: 151px 0 21px;
-	}
-	@media (max-width: $breakpoint-tablet) {
-		padding: 100px 33px 21px;
-	}
-	@media (max-width: 625px) {
-		padding: 100px 0 21px;
-	}
-	@media (max-width: 560px) {
-		font-size: 38px;
-	}
-	@media (max-width: 545px) {
-		font-size: 32px;
-		padding: 100px 12px 21px;
-	}
-}
-
-@media (max-width: 520px) {
-	#h1-home {
-		font-size: 32px;
-	}
-}
-
-@media (max-width: 420px) {
-	#h1-home {
-		font-size: 30px;
-	}
-}
-
-@media (max-width: $breakpoint-iphone678plus) {
-	#h1-home {
-		padding: 100px 12px 21px;
-		font-size: 32px;
-	}
-}
-
-@media (max-width: 380px) {
-	#h1-home {
-		padding: 100px 0px 21px;
-		font-size: 28px;
-	}
+	min-width: 500px;
+	width: 75%;
+	padding-bottom: 20px;
 }
 
 #h1-services {
@@ -503,9 +471,6 @@ figure {
 	height: 370px;
 }
 
-.figure-home {
-	margin: 0 50px 0 0;
-}
 
 @media (max-width: $breakpoint-tablet) {
 	figure {
