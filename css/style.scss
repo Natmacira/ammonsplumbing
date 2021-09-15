@@ -414,33 +414,21 @@ h3 {
 .article-home {
 	text-align: center;
 	padding: 84px 245px 53px;
-}
 
-@media (max-width: 1280px) {
-	.article-home {
+	@media (max-width: 1280px) {
 		padding: 84px 0 53px;
 	}
-}
 
-@media (max-width: $breakpoint-tablet) {
-	.article-home {
+	@media (max-width: 1050px) {
+		padding: 30px 10px;
+	}
+
+	@media (max-width: $breakpoint-tablet) {
 		padding: 40px;
 	}
-}
 
-@media (max-width: 626px) {
-	.article-home {
+	@media (max-width: 626px) {
 		padding: 30px;
-	}
-}
-
-#special-article-home {
-	padding: 84px 160px 53px;
-}
-
-@media (max-width: $breakpoint-tablet) {
-	#special-article-home {
-		padding: 40px;
 	}
 }
 
@@ -448,10 +436,8 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-}
 
-@media (max-width: $breakpoint-tablet) {
-	#ul-home {
+	@media (max-width: $breakpoint-tablet) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -465,6 +451,10 @@ h3 {
 	@media (max-width: 1280px) {
 		width: 90px;
 	}
+
+	@media (max-width: 980px) {
+		width: 50px;
+	}
 }
 
 figcaption {
@@ -477,6 +467,10 @@ figcaption {
 
 	@media (max-width: 1280px) {
 		font-size: 20px;
+	}
+
+	@media (max-width: 980px) {
+		font-size: 16px;
 	}
 }
 
@@ -494,6 +488,10 @@ figure {
 
 	@media (max-width: 1280px) {
 		padding: 50px 25px 25px;
+	}
+
+	@media (max-width: 980px) {
+		padding: 25px 12px 12px;
 	}
 
 	@media (max-width: $breakpoint-tablet) {
@@ -640,21 +638,28 @@ a .button {
 	padding: 140px 167px 80px 65px;
 	background: #d7eefd;
 	border-radius: 0 20px 20px 0;
-}
 
-@media (max-width: $breakpoint-tablet) {
-	#article-about-us {
+	@media (max-width: 1280px) {
+		width: 50%;
+		padding: 70px 80px 40px 30px;
+	}
+
+	@media (max-width: $breakpoint-tablet) {
 		border-radius: 0 0px 20px 20px;
 		padding: 100px 100px 80px 65px;
 	}
-	#img-city {
-		border-radius: 20px 20px 0 0;
+	@media (max-width: $breakpoint-iphone678plus) {
+		padding: 22px;
 	}
 }
 
-@media (max-width: $breakpoint-iphone678plus) {
-	#article-about-us {
-		padding: 22px;
+#img-city {
+	@media (max-width: 1280px) {
+		width: 50%;
+	}
+
+	@media (max-width: $breakpoint-tablet) {
+		border-radius: 20px 20px 0 0;
 	}
 }
 
