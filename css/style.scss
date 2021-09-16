@@ -1,5 +1,6 @@
 // sass style.scss style.min.css --style=compressed
 
+$breakpoint-bigtablet: 1000px;
 $breakpoint-tablet: 768px;
 $breakpoint-iphone678plus: 415px;
 $theme-color-blue: #121e47;
@@ -578,7 +579,7 @@ a .button {
 	font-size: 22px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: $breakpoint-bigtablet) {
 	.icon-here {
 		font-size: 30px;
 		padding: 5px;
@@ -598,7 +599,7 @@ a .button {
 	padding: 0 0 86px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: $breakpoint-bigtablet) {
 	#ul-zones {
 		display: flex;
 		flex-wrap: wrap;
@@ -622,9 +623,11 @@ a .button {
 	padding: 0;
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-bigtablet) {
 	#section-about-us {
 		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 }
 
@@ -644,9 +647,10 @@ a .button {
 		padding: 70px 80px 40px 30px;
 	}
 
-	@media (max-width: $breakpoint-tablet) {
+	@media (max-width: $breakpoint-bigtablet) {
 		border-radius: 0 0px 20px 20px;
 		padding: 100px 100px 80px 65px;
+		width: 100%;
 	}
 	@media (max-width: $breakpoint-iphone678plus) {
 		padding: 22px;
@@ -658,8 +662,9 @@ a .button {
 		width: 50%;
 	}
 
-	@media (max-width: $breakpoint-tablet) {
+	@media (max-width: $breakpoint-bigtablet) {
 		border-radius: 20px 20px 0 0;
+		width: 100%;
 	}
 }
 
@@ -677,13 +682,13 @@ ul.ul-guarantee {
 	align-items: center;
 	padding: 90px 0;
 
-	@media (max-width: $breakpoint-tablet) {
+	@media (max-width: $breakpoint-bigtablet) {
 		display: block;
 		padding: 0 0 50px 0;
 	}
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-bigtablet) {
 	ul.ul-guarantee li.icon-check {
 		font-size: 30px;
 		padding-bottom: 17px;
