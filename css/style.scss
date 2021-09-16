@@ -110,8 +110,9 @@ header .inner-container {
 		display: block;
 	}
 
-	@media (max-width: $breakpoint-phone) {
+	@media (max-width: $breakpoint-bigphone) {
 		justify-content: space-evenly;
+		display: flex;
 	}
 }
 
@@ -149,11 +150,19 @@ header {
 		padding-bottom: 30px;
 	}
 
-	@media (max-width: $breakpoint-phone) {
+	@media (max-width: $breakpoint-bigphone) {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+
+	a.home-link img {
+		@media (max-width: $breakpoint-phone) {
+			width: 65%;
+		}
+	}
 }
+
+
 
 section {
 	padding: 0 120px;
@@ -1102,6 +1111,7 @@ textarea::placeholder {
 @media (max-width: $breakpoint-phone) {
 	#open-mobile-menu {
 		right: 80px;
+		top: 30px;
 	}
 }
 
