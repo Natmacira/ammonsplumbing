@@ -2,7 +2,8 @@
 
 $breakpoint-bigtablet: 1000px;
 $breakpoint-tablet: 768px;
-$breakpoint-iphone678plus: 415px;
+$breakpoint-bigphone: 550px;
+$breakpoint-phone: 415px;
 $theme-color-blue: #121e47;
 $theme-color-light-blue: #009fe3;
 
@@ -109,7 +110,7 @@ header .inner-container {
 		display: block;
 	}
 
-	@media (max-width: $breakpoint-iphone678plus) {
+	@media (max-width: $breakpoint-phone) {
 		justify-content: space-evenly;
 	}
 }
@@ -148,7 +149,7 @@ header {
 		padding-bottom: 30px;
 	}
 
-	@media (max-width: $breakpoint-iphone678plus) {
+	@media (max-width: $breakpoint-phone) {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -157,7 +158,7 @@ header {
 section {
 	padding: 0 120px;
 
-	@media (max-width: $breakpoint-iphone678plus) {
+	@media (max-width: $breakpoint-phone) {
 		padding: 0;
 	}
 }
@@ -165,7 +166,7 @@ section {
 footer {
 	padding: 71px 120px 84px 120px;
 
-	@media (max-width: $breakpoint-iphone678plus) {
+	@media (max-width: $breakpoint-phone) {
 		padding: 70px 60px;
 	}
 }
@@ -198,7 +199,7 @@ a {
 			font-size: 24px;
 		}
 
-		@media (max-width: $breakpoint-iphone678plus) {
+		@media (max-width: $breakpoint-phone) {
 			font-size: 20px;
 		}
 
@@ -252,9 +253,14 @@ h3 {
 
 #h1-home {
 	color: #ffffff;
-	min-width: 500px;
+/*	min-width: 500px; */
 	width: 75%;
 	padding-bottom: 20px;
+	@media (max-width: $breakpoint-bigphone) {
+		width: 100%;
+		font-size: 26px;
+	}
+
 }
 
 #h1-services {
@@ -298,6 +304,10 @@ h3 {
 	}
 	#first-home-paragraph {
 		font-size: 24px;
+		
+		@media (max-width: $breakpoint-bigphone) {
+			font-size: 18px
+		}
 	}
 }
 
@@ -314,7 +324,7 @@ h3 {
 	}
 }
 
-@media (max-width: $breakpoint-iphone678plus) {
+@media (max-width: $breakpoint-phone) {
 	#first-home-paragraph {
 		padding: 0 49px;
 		font-size: 18px;
@@ -328,7 +338,7 @@ h3 {
 	}
 }
 
-@media (max-width: $breakpoint-iphone678plus) {
+@media (max-width: $breakpoint-phone) {
 	#snd-home-paragraph,
 	#trd-home-paragraph {
 		font-size: 18px;
@@ -358,7 +368,7 @@ h3 {
 	}
 }
 
-@media (max-width: $breakpoint-iphone678plus) {
+@media (max-width: $breakpoint-phone) {
 	.frd-home-paragraph {
 		font-size: 16px;
 	}
@@ -540,7 +550,7 @@ a .button {
 	}
 }
 
-@media (max-width: $breakpoint-iphone678plus) {
+@media (max-width: $breakpoint-phone) {
 	a .button {
 		width: 55%;
 	}
@@ -596,7 +606,7 @@ a .button {
 	}
 }
 
-@media (max-width: $breakpoint-iphone678plus) {
+@media (max-width: $breakpoint-phone) {
 	.icon-here {
 		font-size: 22px;
 	}
@@ -618,7 +628,7 @@ a .button {
 	}
 }
 
-@media (max-width: $breakpoint-iphone678plus) {
+@media (max-width: $breakpoint-phone) {
 	#ul-zones {
 		padding-bottom: 40px;
 		padding-right: 35px;
@@ -640,7 +650,7 @@ a .button {
 	}
 }
 
-@media (max-width: $breakpoint-iphone678plus) {
+@media (max-width: $breakpoint-phone) {
 	#section-about-us {
 		padding: 0 40px;
 	}
@@ -661,7 +671,7 @@ a .button {
 		padding: 100px 100px 80px 65px;
 		width: 100%;
 	}
-	@media (max-width: $breakpoint-iphone678plus) {
+	@media (max-width: $breakpoint-phone) {
 		padding: 22px;
 	}
 }
@@ -688,7 +698,7 @@ ul.ul-guarantee {
 			font-size: 30px;
 			padding-bottom: 17px;
 		}
-		@media (max-width: $breakpoint-iphone678plus) {
+		@media (max-width: $breakpoint-phone) {
 			font-size: 18px;
 			padding-left: 40px;
 		}
@@ -1089,7 +1099,7 @@ textarea::placeholder {
 	}
 }
 
-@media (max-width: $breakpoint-iphone678plus) {
+@media (max-width: $breakpoint-phone) {
 	#open-mobile-menu {
 		right: 80px;
 	}
