@@ -668,10 +668,11 @@ a .button {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+	
 	}
 }
 
-@media (max-width: $breakpoint-phone) {
+@media (max-width: $breakpoint-bigphone) {
 	#section-about-us {
 		padding: 0 40px;
 	}
@@ -716,12 +717,12 @@ ul.ul-guarantee {
 	font-family: "IBM Plex Sans", sans-serif;
 	li.icon-check {
 		@media (max-width: $breakpoint-bigtablet) {
-			font-size: 30px;
+			font-size: 24px;
 			padding-bottom: 17px;
 		}
 		@media (max-width: $breakpoint-phone) {
-			font-size: 18px;
-			padding-left: 40px;
+			font-size: 15px;
+			padding-left: 0;
 		}
 	}
 }
@@ -731,6 +732,11 @@ ul.ul-guarantee {
 		display: block;
 		padding: 30px;
 		margin: 0 auto;
+	}
+
+	@media (max-width: $breakpoint-phone) {
+		padding: 20px 0;
+		width: 80%;
 	}
 }
 
@@ -744,6 +750,12 @@ ul.ul-guarantee {
 		display: block;
 		padding: 0 0 50px 0;
 	}
+
+	@media (max-width: $breakpoint-bigphone) {
+		padding: 0 50px;
+	}
+
+
 }
 
 .ul-services {
